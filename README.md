@@ -1,7 +1,7 @@
 # sd
 
 Instalacja:
-
+```
 mkdir -p $GOPATH/src/github.com/dmacvicar; cd $GOPATH/src/github.com/dmacvicar
 git clone https://github.com/dmacvicar/terraform-provider-libvirt.git
 cd $GOPATH/src/github.com/dmacvicar/terraform-provider-libvirt
@@ -15,6 +15,6 @@ cd sd
 terraform plan
 
 terraform apply
-
+```
 
 
