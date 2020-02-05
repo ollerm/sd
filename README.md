@@ -10,11 +10,22 @@ make install
 git clone https://github.com/ollerm/sd.git
 
 cd sd
+```
+edycja kluczy w cloud-init.cfg
 
+```
 #sprawdzamy czy wszystko ok
 terraform plan
 
 terraform apply
+```
+
+ustawienie hostów w pliku hosts oraz ip mastera w playbook-masters.yml
+
+```
+ansible-playbook playbook-masters.yml
+ansible-playbook playbook-workers.yml
+
 ```
 
 
