@@ -1,0 +1,11 @@
+---
+- hosts: workers
+  tasks:
+  - name: copy token
+    copy: src=./token dest=/root/join_token
+
+  - name: Join to master
+    shell: |
+     kubeadm reset -f
+     cat /root/join_token | tail -2 > set.sh
+     sh set.sh

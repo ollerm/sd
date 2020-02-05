@@ -1,0 +1,8 @@
+[masters]
+master ansible_host=10.0.100.129
+
+[workers]
+worker1 ansible_host=10.0.100.201
+worker2 ansible_host=10.0.100.202
+worker3 ansible_host=10.0.100.203
+worker4 ansible_host=10.0.100.204
