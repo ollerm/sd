@@ -2,6 +2,9 @@
 
 Instalacja:
 ```
+zainstalować libvirt, kvm/qemu
+```
+```
 mkdir -p $GOPATH/src/github.com/dmacvicar; cd $GOPATH/src/github.com/dmacvicar
 git clone https://github.com/dmacvicar/terraform-provider-libvirt.git
 cd $GOPATH/src/github.com/dmacvicar/terraform-provider-libvirt
@@ -18,6 +21,10 @@ edycja kluczy w cloud-init.cfg
 terraform plan
 
 terraform apply
+```
+sprawdzenie ip wirtualek
+```
+virsh  net-dhcp-leases vm_network
 ```
 
 ustawienie hostów w pliku hosts oraz ip mastera w playbook-masters.yml
